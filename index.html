@@ -1,12 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <title>
+            Homepage
+        </title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            html {
+                margin: 0px;
+                height: 100%;
+                width: 100%;
+            }
+            body {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                margin:0;
+                background-image: url(c2b143c01552657daf5139435747467c.jpg);
+                background-repeat: repeat-y;
+                background-size: cover;
+                border: 5px solid brown;
+                font-family: 'Codystar';
+                padding: 0;
+                min-height: 100%;
+            } 
+            .text{
+                font-size: 30px;
+                text-align: center;
+                font-weight: bold;
+                color: white;
+                text-shadow: 2px 2px 4px #080808;
+            }
+            table,td{
+                  color: white;
+                  border-collapse: collapse;
+                  margin-top: 200px;
+                 margin-left: 100px;
+                 margin-right: 100px;
+             }
+             #one{
+                  border-collapse: collapse;
+                  margin-top: 200px;
+                 margin-left: 135px;
+                 margin-right: 50px; 
+             }
+             #two{
+                font-size: 50px;
+                color: white;
+                 font-family: 'Times New Roman', Times, serif;
+             }
+            .footer{
+                left:0;
+                bottom:0;
+                width:100%;
+                height: 50px;
+                background-color: brown;
+                color:white;
+                text-align: center;
+                margin-top: 300px;
+                margin-bottom: 0;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 30px;
+            }
+            .navbar {
+                display: flex;
+                align-items: left;
+                justify-content: left;
+                position: sticky;
+                top: 0;
+                cursor: pointer;
+                width: 100%;
+                height: 70px;
+                border: 2px solid brown;
+            }  
+            .background {
+                background: black;
+                background-blend-mode: darken;
+                background-size: cover;
+            }
+            .nav-list {
+                width: 60%;
+                display: flex;
+                align-items: center;
+            }
+            .logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .logo img {
+                width: 50px;
+                height: auto;
+                border-radius: 50px;
+            }
+            .nav-list li {
+                list-style: none;
+                padding: 14px 20px;
+                font-size: 20px;
+            }
+            .nav-list li a {
+                text-decoration: none;
+                color: white;
+            }
+            .nav-list li a:hover {
+                color: rgb(188, 68, 17);
+            }
+            .rightnav {
+                width: 30%;
+                text-align: right;
+               
+            }
+            .img {
+                border: 5px solid rgb(10, 10, 10);
+                border-radius: 1px;
+                padding: 10px;
+                }
+            .dropbtn {
+                background-color: black
+                color: white;
+                padding: 16px;
+                font-size: 20px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+               display: none;
+               position: absolute;
+               background-color: #e3b7a4;
+               min-width: 160px;
+               box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+               z-index: 1;
+            }
+
+            .dropdown-content a {
+               color: black;
+               padding: 12px 16px;
+               text-decoration: none;
+               display: block;
+            }
+
+            .dropdown-content a:hover {color: rgb(188, 68, 17);}
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+                background-color: black;
+            }
+
+            .dropdown:hover .dropbtn {
+                color: rgb(188, 68, 17);
+            }
+            /* form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: right
+  width: 80%;
+  background: #f1f1f1;
+} 
+
+form.example button {
+    display: inline;
+    margin: auto;
+  float: right;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+
+
+.neons {
+   margin-top: 10rem;
+   text-align: center;
+}
+
+.neons h1 {
+  font-size: 9rem;
+  text-align: center;
+   font-weight: bold;
+   text-decoration: underline;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+     from {
+      color: rgb(3, 3, 3);
+    text-shadow: 0 0 10px brown, 0 0 20px brown, 0 0 30px brown, 0 0 40px brown, 0 0 50px brown, 0 0 60px brown, 0 0 70px brown, 0 0 90px brown;
+    text-decoration-color: brown, 0 0 20px brown, 0 0 30px brown, 0 0 40px brown, 0 0 50px brown, 0 0 60px brown, 0 0 70px brown, 0 0 90px brown;;  
+}
+  
+  to {
+     color: rgb(190, 186, 186);
+    text-shadow: 0 0 20px brown, 0 0 30px brown, 0 0 40px brown, 0 0 50px brown, 0 0 60px brown, 0 0 70px brown, 0 0 80px brown, 0 1 90px brown;
+    text-decoration-color: brown, 0 0 20px brown, 0 0 30px brown, 0 0 40px brown, 0 0 50px brown, 0 0 60px brown, 0 0 70px brown, 0 0 90px brown;;  
+}
+}
+img{
+    width: 550px;
+    height: 400px;
+}
+#imgg{
+    width: 350px;
+    height: 300px;
+    padding: 30px;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: justify;
+    font-weight: bold;
+    padding: 0px 50px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.82),rgba(247, 33, 33, 0.144));
     
-</body>
+}
+center{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bolder;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.82),rgba(0, 0, 0, 0.82),rgba(247, 33, 33, 0.281));
+    width: 700px;
+    margin-left: 50px;
+}
+.t1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.84),rgb(250, 47, 47));
+    width: 250px;
+    height: 20px;
+    padding: 30px;
+    margin-top: -100px;
+    margin-left: 50px;
+    position: relative;
+}
+    </style>
+    </head>
+    <body>
+        <nav class="navbar background">
+            <ul class="nav-list">
+                <div class="logo">
+                    <img src= "https://tse4.mm.bing.net/th?id=OIP.cGIouBQzfnQWH3L9htlsEAHaHa&pid=Api&P=0">
+                </div>
+                <li><a href="file:///C:/Users/Bhumi/Desktop/sample/E-Library/Home%20page.html">Home</a></li>
+                <li><a href="file:///C:/Users/Bhumi/Desktop/sample/E-Library/login%20_page.html">login</a></li>
+                <li><a href="file:///C:/Users/Bhumi/Desktop/sample/E-Library/about.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Semester</a>
+                    <div class="dropdown-content">
+                      <a href="file:///C:/Users/Bhumi/Desktop/sample/E-Library/sem1.html">Semester-1</a>
+                      <a href="file:///C:/Users/Bhumi/Desktop/sample/E-Library/sem2.html">Semester-2</a>
+                      <a href="file:///C:/Users/Bhumi/Desktop/sample/E-Library/sem3.html">Semester-3</a>
+                      <a href="file:///C:/Users/Bhumi/Desktop/sample/E-Library/sem4.html">Semester-4</a>
+                      <a href="file:///C:/Users/Bhumi/Desktop/sample/E-Library/sem5.html">Semester-5</a>
+                      <a href="file:///C:/Users/Bhumi/Desktop/sample/E-Library/sem6.html">Semester-6</a>
+                    </div>
+                  </li>
+                <li><a href="file:///C:/Users/Bhumi/Desktop/sample/E-Library/contactpage.html">Contact Us</a></li>
+            </ul>
+            <!-- <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                <input type="text" placeholder="Search.." name="search2">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form> -->
+        </nav>
+            <!-- <div class="row"> -->
+               <div class="neons col-12">
+                 <h1><em>CSE E-Library<em></h1>
+               </div>
+            <!-- </div> -->
+         <div class="text"> Today's Research,
+            Tomorrow's Innovation </div>
+            <table>
+                <tr>
+                    <td width="550px"><img src="digital-book.jpg"> </td>
+                    <td colspan="3" width="1000px"><center>CSE E-Library</center> <p>CSE E-Library is a comprehensive digital learning solution to empower learners across Computer Science Engineering.
+                        They can now access their course books as per their convenience, from this website.<br>
+                        An end-to-end solution that helps deliver an analytics driven personalized learning experience.</p></td>
+                </tr>
+                </table>  
+                
+                <table id="one">
+                   <th id="two" colspan="3" height="100px">Seamless Learning Experience</th>
+                    <tr>
+                        <td width="300px"><img id="imgg" src="Girl-hands-typing-on-laptop-on-wooden-table-at-night-520886540_4500x3000.jpeg"><h2 class="t1"> A Handy Digital Repository</h2></td>
+                        <td width="300px"><img id="imgg" src="online24-7.jpg"><h2 class="t1"> 24/7 Access</h2></td>
+                        <td width="300px"><img id="imgg" src="iiw_bible_studies-narrow-1024x512-1.jpg"><h2 class="t1"> Study on the go</h2></td>
+                    </tr>
+                    <tr>
+                        <td><img id="imgg" src="I-K-Gujral-Punjab-Technical-University.jpg"><h2 class="t1">Books Suggested by Ik Gujral PTU</h2></td>
+                        <td><img id="imgg" src="saving-time.jpg"> <h2 class="t1">Saves a lot of time</h2></td>
+                        <td><img id="imgg" src="th (1).jpg"><h2 class="t1">PDf links available</h2></td>
+                    </tr>
+                </table>
+                <div class="footer">
+                 <marquee direction="left">Thankyou For Visiting Our Website. Contact Us for further enquiry.</marquee>   
+                </div>
+    </body>
 </html>
