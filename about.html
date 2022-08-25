@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body{
+          background-color: brown;
+        }
+        table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+table{
+    border: 15px solid rgb(173, 72, 72);
+}
+tr,td{
+    border: 3px solid  rgb(173, 72, 72);
+}
+img{
+    border: 10px solid  rgb(173, 72, 72);
+}
+.one{
+    background-image: url(https://www.designbolts.com/wp-content/uploads/2014/06/Polygon-twitter-header-background.jpg);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 90px;
+    font-weight: 400px;
+    text-shadow: 4px 4px 2px rgb(249, 168, 92);
+    text-decoration: underline;
+}
+.two{
+background-color:  rgb(173, 72, 72);
+}
+.three{
+ background-image: linear-gradient(rgba(2, 2, 2, 0.849),rgba(247, 66, 25, 0.886));   
+font-size: 30px;
+font-family: 'Times New Roman', Times, serif;
+color: white;
+text-shadow: 1px 1px 2px rgb(12, 1, 1);
+font-weight: 400px;
+text-align: justify;
+padding: 20px;
+}
+.four{
+background-image: linear-gradient(rgb(247, 161, 161),rgba(193, 65, 22, 0.651));   
+font-size: 50px;
+font-family: 'Times New Roman', Times, serif;
+font-weight: 500px;
+text-shadow: 2px 2px 2px rgb(249, 123, 88);
+text-align: center;
+}
+button{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(12, 12, 12);
+  background-color: rgba(210, 39, 9, 0.705);
+  float: right;
+}
+  </style>
+</head>
+<body>
+    <table style="width:100%">
+        <tr height="200px">
+          <td class="one" colspan="4" width="500px"> About Us</td>
+        </tr>
+        <tr height="300px">
+          <td class="two" width="200px" colspan="1"><img src="https://i.pinimg.com/originals/6e/64/88/6e648892dec5ef98b3a9cb4ac0bd904d.jpg" width="558px" height="550px" > </td>
+          <td class="three" colspan="3"><h3>This is an E-Library for BTech. Computer Science and Engineering Students</h3> <br>
+          <p>This Website will be helpful for CSE students of all semesters.  This will help in saving time and efforts while finding a book for a particular semester. Our Website provides links to buy and download books suggested by IK Gujral Punjab Technical University. Students can chosose their semester from the dropdown provided on Home Page. Links to all the Subject Books are provided along with their Title and Author's name. The chosen book can then be downloaded or bought according to the link provided.   </p></td>
+        </tr>
+        <tr height="100px">
+            <td class="four" colspan="4" width="500px"><marquee direction="right"> Readers Are Leaders</marquee></td> 
+        </tr>
+      </table> 
+      <button onclick="goBack()">Previous Page</button>
+<script>
+function goBack() {
+   window.history.back();
+}
+</script>
+</body>
+</html>

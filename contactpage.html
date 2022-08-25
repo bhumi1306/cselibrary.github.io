@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body{
+            background-image: url(https://wallpapercave.com/wp/wp2213316.jpg);
+            background-size: cover;
+        }
+        .container{
+            border: 3px solid white;
+            backdrop-filter: blur(3px);
+            width: 600px;
+            height: 650px;
+            margin: auto;
+            margin-top: 100px;
+            padding: 15px;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-shadow: 2px 2px 2px black;
+        }
+        h2{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            text-shadow: 2px 2px 2px black;
+            font-size: 60px;
+        }
+        button {   
+       background-color:  orangered;   
+       width: 200px;
+       height: 50px; 
+       margin: 10px 0;
+       border-radius: 10px;
+       float: right;
+        color: rgb(3, 3, 3);   
+        padding: 25px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+         }   
+ input[type=text], textarea {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid white;   
+        border-radius: 10px;
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+    #demo1{
+    font-size: 15px;
+    font-weight: 700px;
+    color: red;
+    text-shadow: 1px 1px 2px rgb(5, 0, 0);
+}
+        
+    </style>
+</head>
+<body>
+  <div class="container">
+<h2>Contact Us :</h2>
+<form>
+    <label>Name: <br> </label>
+    <input type="text" placeholder="Enter full name" name="Name" id="name" required><br>
+    <label>E-mail: <br> </label>
+    <input type="text" placeholder="Enter E-mail" name="Email" id="email" required><br>
+    <label>Write Something: <br> </label>
+    <textarea rows="7" placeholder="Message" id="msg" required></textarea><br>
+    <p id="demo1"></p>
+    <button onclick="validate()" type="submit" placeholder="Send" value="submit">Send</button>
+</form>
+  </div>  
+    <button onclick="goBack()">Previous Page</button>
+    <script>
+    function goBack() {
+       window.history.back();
+    }
+    function validate(){
+                var Name = document.getElementById("name").value;
+                var Email = document.getElementById("email").value;
+                var Message = document.getElementById("msg").value;
+                if(Name=="" || Email=="" || Message==""){
+                    document.getElementById("demo1").innerHTML= "Please Fill The Form To Send a Message!";
+                    return false;
+                }
+                else{
+                    alert("Message Sent!");
+                    return false;
+                }
+            }
+    </script>  
+</body>
+</html>
